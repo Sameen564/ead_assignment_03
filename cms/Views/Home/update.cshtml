@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "update";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 16px 48px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        </script >
+    </style>
+
+</head>
+
+<body>
+    <form method="post" action="updateteacher">
+        <img src="logo.jpg" width="200" height="133"><h1 align="center">Punjab University College Of Information And Technology </h1>
+        <hr size="30" color="tomato">
+        <hr align="right" size="30" width="100%" color="blue">
+        <tr><p><font color=blue size=3><b><u>Teacher Information</u></b></font></p></tr>
+
+        <tr>
+            <td align="right">Enter the name of Teacher to be updated :</td>
+            <td><input type=text name="unaam"></td>
+        </tr>
+        <br><br>
+        <tr>
+            <td align="right">Enter new name:</td>
+            <td><input type=text name="uname"></td>
+        </tr>
+        <br><br>
+        <tr>
+            <td align="right">Contact:</td>
+            <td><input type=text name="con"></td>
+        </tr>
+        <br><br>
+
+        <tr>
+            <td align="right">Email:</td>
+            <td><input type=text name="email"></td>
+            </td>
+        </tr>
+        <br><br>
+        <tr>
+            <td align="right">Category:</td>
+            <td><input type=text name="category"></td>
+            </td>
+        </tr>
+        <br><br>
+        <tr>
+            <td></td>
+            <td><input type=submit value='Update'></td>
+        </tr>
+
+        </table>
+    </form>
+
+
+</body>
+</html>

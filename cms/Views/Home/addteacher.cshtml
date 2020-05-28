@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "addteacher";
+}
+
+<html>
+<head>
+    <title>Add Teacher</title>
+
+    <script language="JavaScript" type="text/javaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+</style>
+
+function validate()
+{
+
+	if ( document.employer.username.value == "" )
+	    {
+			alert("User name is empty!!");
+			return false;
+	    }
+
+
+
+	if ( document.employer.contact.value == "" )
+	{
+			alert("Telephone is empty!!");
+			return false;
+	}
+
+	if ( document.employer.email.value == "" )
+        {
+		alert("Please enter email address!")
+		return false;
+	}
+	if ( document.employer.category.value == "" )
+        {
+		alert("Please enter category of teacher!")
+		return false;
+	}
+
+	return true;
+
+}
+
+
+function letternumber(event)
+	{
+		var keychar;
+
+		keychar = event.key;
+		alert(event.key)
+
+		// alphas and numbers
+		if (((".+-0123456789").indexOf(keychar) > -1))
+		   return true;
+		else
+		   return false;
+	}
+
+    </script>
+
+
+</head>
+
+<body>
+    <form method="post" action="teacheradd">
+        <img src="logo.jpg" width="200" height="133"><h1 align="center">Punjab University College Of Information And Technology </h1>
+        <hr size="30" color="tomato">
+        <hr align="right" size="30" width="100%" color="blue">
+
+        <tr><p><font color=blue size=3><b><u>Teacher Information</u></b></font></p></tr>
+
+
+        <tr>
+            <td align="right">Username:</td>
+            <td><input type=text name="username"></td>
+        </tr>
+
+        <tr>
+            <td align="right">Contact Person:</td>
+            <td><input type=text name=contact></td>
+        </tr>
+
+        <tr>
+            <td align="right">Email:</td>
+            <td><input typ=text name=email></td>
+        </tr>
+        <tr>
+            <td align="right">Category:</td>
+            <td><input typ=text name=category></td>
+        </tr>
+
+
+        <tr>
+            <td></td>
+            <td><input type=submit value='Add'></td>
+        </tr>
+
+        </table>
+    </form>
+</body>
+</html>
+
+

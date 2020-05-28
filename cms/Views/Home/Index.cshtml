@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 16px 48px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.jpg" width="200" height="133"><h1 align="center">Punjab University College Of Information And Technology </h1>
+    <hr size="30" color="tomato">
+    <hr align="right" size="30" width="100%" color="blue">
+    <form method="post" action="Home/addteacher">
+        <button class=button>Add Teacher</button>
+        </form>
+     <form method="post" action="Home/update">
+            <button class=button>Update Teacher</button>
+      </form>
+
+ 
+
+        <form method="post" action="Home/viewteacher">
+            <button class=button>Display </button>
+            </form>
+</body>
+</html>
+
+
